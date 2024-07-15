@@ -4,7 +4,7 @@ export const authApi = createApi({
   reducerPath: 'authApi',
 
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://slimmom-backend-8fve.onrender.com/api',
+    baseUrl: 'https://slimmom-backend-sjem.onrender.com/api',
 
     prepareHeaders: (headers, { getState }) => {
       const token = getState().auth.token;

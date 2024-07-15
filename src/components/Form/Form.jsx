@@ -68,12 +68,8 @@ export const WeightForm = ({ openModal, setUserParams, initialValues }) => {
   };
 
   const handleSubmit = async values => {
-    console.log('➡️➡️➡️➡️➡️➡️', values);
-
     const params = { ...values };
     params.bloodType = +params.bloodType;
-
-    console.log('➡️➡️➡️➡️➡️➡️', params);
 
     try {
       await schema.validate(params);
