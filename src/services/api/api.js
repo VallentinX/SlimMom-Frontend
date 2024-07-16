@@ -1,14 +1,14 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://slimmom-backend-sjem.onrender.com';
+axios.defaults.baseURL = 'https://slimmom-backend-sjem.onrender.com/api';
 
 const END_POINTS = {
-  DailyCalorieIntake: '/api/products',
-  AddMyProduct: '/api/myProducts/addProduct',
-  ListMyProducts: '/api/myProducts/listMyProduct',
-  DeleteMyProduct: '/api/myProducts/',
-  GetSearchProducts: '/api/products/searchProducts',
-  UpdateUserInfo: '/api/users/infouser',
+  DailyCalorieIntake: '/products',
+  AddMyProduct: '/myProducts/addProduct',
+  ListMyProducts: '/myProducts/listMyProduct',
+  DeleteMyProduct: '/myProducts/',
+  GetSearchProducts: '/products/searchProducts',
+  UpdateUserInfo: '/users/infousers',
 };
 
 const handleApiError = error => {

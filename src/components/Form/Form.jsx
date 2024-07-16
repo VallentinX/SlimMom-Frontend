@@ -29,6 +29,7 @@ const schema = yup.object().shape({
     .integer('Height must be a integer number')
     .typeError('Height must be a number')
     .required('Height is required field'),
+
   age: yup
     .number('Age is use only number')
     .min(18, 'Please enter a number more than or equal to 18')
@@ -36,6 +37,7 @@ const schema = yup.object().shape({
     .typeError('Age must be a number')
     .required('Age is required field')
     .integer('Age must be a integer number'),
+
   currentWeight: yup
     .number('Current weight is use only number')
     .min(20, 'Please enter a number more than or equal to 20')
@@ -43,6 +45,7 @@ const schema = yup.object().shape({
     .typeError('Current weight must be a number')
     .required('Current weight is required field')
     .integer('Current weight must be a integer number'),
+
   desiredWeight: yup
     .number('Desired weight is use only number')
     .min(20, 'Please enter a number more than or equal to 20')
@@ -50,6 +53,7 @@ const schema = yup.object().shape({
     .typeError('Desired weight must be a number')
     .required('Desired weight is required field')
     .integer('Desired weight must be a integer number'),
+
   bloodType: yup.number().required('Blood type is a required field'),
 });
 
